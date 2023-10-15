@@ -16,7 +16,7 @@ export default function Contact({ listing }) {
         setLandlord(data);
         setMessage("");
       } catch (error) {
-        console.log(error);
+        // console.log(error);
       }
     };
     fetchLandlord();

@@ -11,7 +11,7 @@ export default function Home() {
   const [saleListings, setSaleListings] = useState([]);
   const [rentListings, setRentListings] = useState([]);
   SwiperCore.use([Navigation]);
-  console.log(offerListings);
+  // console.log(offerListings);
   useEffect(() => {
     const fetchOfferListings = async () => {
       try {
@@ -20,7 +20,7 @@ export default function Home() {
         setOfferListings(data);
         fetchRentListings();
       } catch (error) {
-        console.log(error);
+        // console.log(error);
       }
     };
     const fetchRentListings = async () => {
@@ -30,7 +30,7 @@ export default function Home() {
         setRentListings(data);
         fetchSaleListings();
       } catch (error) {
-        console.log(error);
+        // console.log(error);
       }
     };
 
